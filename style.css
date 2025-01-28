@@ -55,13 +55,14 @@ body {
 }
 
 main {
-  display: grid;
+  /* display: grid;
   justify-content: center;
   align-content: center;
   padding: 4rem;
-  grid-template-columns: 70%;
+  grid-template-columns: 80%;
   grid-template-rows: auto;
-  width: 100vw;
+  width: 100vw; */
+  margin: 6rem;
 }
 
 header {
@@ -70,7 +71,7 @@ header {
   align-items: center;
   position: relative;
   z-index: 1;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
 }
 
 .header-decor {
@@ -121,11 +122,11 @@ header {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 80px;
 }
 
 .project {
-  height: 300px;
+  height: 500px;
   display: grid;
   grid-template-rows: 3fr 2fr;
   box-shadow: 4px 4px 8px 0px rgba(66, 68, 90, 1);
@@ -137,6 +138,7 @@ header {
   justify-content: center;
   align-items: center;
   color: white;
+  font-size: 200%;
 }
 
 .project-desc {
@@ -161,7 +163,42 @@ header {
   gap: 5px;
 }
 
-.my-work {
+.smaller-heading {
   font-family: "serif";
   font-size: 2em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 150%;
+  gap: 2rem;
+  padding: 6rem;
+  width: 100%;
+  background-color: rgb(0, 153, 255);
+  color: white;
+  font-weight: bold;
+}
+
+.contact {
+  display: grid;
+}
+
+.contact-info svg {
+  height: 25px;
+}
+
+.contact-info {
+  display: flex;
+  /* justify-content:  */
+  gap: 1em;
+  align-items: center;
+}
+
+.contact .socials {
+  justify-content: flex-start;
+}
+
+.contact .socials img {
+  width: 40px;
 }
